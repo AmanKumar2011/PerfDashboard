@@ -30,5 +30,6 @@ public static void a()
 		System.out.println( "I am inside main");
 		StaticBlockClass.a();
 		a();
+	//	System.out.println("Testing Completed for Static");
 	}
 }
