@@ -4,15 +4,13 @@ public class HDFC implements Rbi
 {
 
 	
-	
-	
 
-	@Override
-	public void withdrawal()
-	{
-		System.out.println("I have overridden withdrawl in HDFC");
-		
-	}
+	/*
+	 * @Override public void withdrawal() {
+	 * System.out.println("I have overridden withdrawl in HDFC");
+	 * 
+	 * }
+	 */
 
 	@Override
 	public void deposit() 
@@ -24,9 +22,12 @@ public class HDFC implements Rbi
 	
 	public static void main(String[] args)
 	{
+		
+			
 		HDFC i= new HDFC();
 		i.withdrawal();
-	//	Rbi.withdrawl();
+		i.withdrawalRbi1();
+	
 		i.deposit();
 
 	}

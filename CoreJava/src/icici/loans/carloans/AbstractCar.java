@@ -23,10 +23,12 @@ public class AbstractCar extends AbstractVehicle
 			System.out.println(ac.nooftypres);
 ac.a();
 ac.b();
+ac.test();
 
 AbstractVehicle name;
 name = new AbstractCar();
 name.start();
+name.test();
 //name.b();
 
 		}	

@@ -24,6 +24,8 @@ public class AbstractBike extends AbstractVehicle
 		{
 			AbstractBike ab= new AbstractBike();
 			
+			
+			
 			ab.start();
 			ab.a();
 			System.out.println(ab.nooftypres);
