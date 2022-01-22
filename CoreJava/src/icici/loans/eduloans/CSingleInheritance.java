@@ -30,10 +30,10 @@ public class CSingleInheritance extends ASingleInheritance
 	
 	c.m1();
 	c.A1();
-	c.d1(); // only default method of parent class cannot be accessed from child class of different package with child class object
+	c.d1(); // only default and private method of parent class cannot be accessed from child class of different package with child class object
 	
 	ASingleInheritance a = new ASingleInheritance();
-	a.m1(); //only public class method can be accessed by parent class object in other package
+	a.m1(); //only public class method can be accessed by parent class object in other package . this is has a relation
 	a.d1();
 	a.A1();
 	
@@ -46,7 +46,7 @@ public class CSingleInheritance extends ASingleInheritance
 	
 	
 	
-	CSingleInheritance test= new ASingleInheritance();
+	CSingleInheritance test= new ASingleInheritance(); //child class cannot have reference of parent class
 	
 	}
 
