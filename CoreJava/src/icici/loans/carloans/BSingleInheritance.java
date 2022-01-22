@@ -69,6 +69,10 @@ ASingleInheritance a1 = new BSingleInheritance();
  
 		
 
+		
+		
+		
+		
 	}
 
 }
