@@ -3,6 +3,15 @@ package icici.loans.carloans;
 public class AbstractCar extends AbstractVehicle
 {
 
+	//final public int a;  final variable always needs to be initialized inside Abstract Class and Interface
+	
+	final public int b;
+	
+	AbstractCar()
+	{
+		b=5;
+	}
+	
 		@Override
 	public void start() 
 	{
@@ -29,6 +38,8 @@ AbstractVehicle name;
 name = new AbstractCar();
 name.start();
 name.test();
+name.a();
+name.A1();
 //name.b();
 
 		}	

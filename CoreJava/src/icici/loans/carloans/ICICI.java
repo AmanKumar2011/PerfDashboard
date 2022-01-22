@@ -3,7 +3,12 @@ package icici.loans.carloans;
 public class ICICI implements Rbi
 {
 
+final public int b; //If a final variable is not initialized during declaration, then it can be initialized in constructor
 	
+	ICICI()
+	{
+		b=5;
+	}
 
 	@Override
 	public void withdrawal() {
@@ -19,14 +24,14 @@ public class ICICI implements Rbi
 
 	public static void main(String[] args)
 	{
-		ICICI i= new ICICI();
-		i.withdrawal();
+		ICICI i1= new ICICI();
+		i1.withdrawal();
 	//	Rbi.withdrawal();
-		i.deposit();
+		i1.deposit();
 		
-	//	Rbi i;
-	//	i= new ICICI();
-	//	i.withdrawal();
+		Rbi i;
+		i= new ICICI();
+		i.withdrawal();
 		
 	//	ICICI b= new ICICI();
 	//	b.withdrawal();

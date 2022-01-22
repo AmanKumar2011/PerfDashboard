@@ -1,8 +1,18 @@
 package icici.loans.carloans;
 
- public interface Rbi extends Rbi1// extends Car   // interface can extend only interface. it cannot extend a class
+import icici.loans.eduloans.AbstractTrain;
+
+public interface Rbi extends Rbi1// extends Car   // interface can extend only interface. it cannot extend a class
 {
 	 int x=100;
+	 
+//	int b; //If a final variable is not initialized during declaration, then it can be initialized in constructor.
+//		//But interface does not have constructor so variable has to be mandatorily initialized
+//		Rbi()
+//		{
+//			b=5;
+//		}
+	 
 	
 	//protected void a();
 	
@@ -37,8 +47,14 @@ package icici.loans.carloans;
 		
 		
 		
-		i= new ICICI();
-		i.withdrawal();
+		i= new ICICI(); //Run time polymorphism. 
+		
+		i.withdrawal();  // withdrawl method is from rbi interface during complile time. During run time it is of icici. 
+		//So abstraction also is achieved here. Only interface method name is shown and no implementation details are displayed.
+		
+		i=new AbstractTrain();
+		i.deposit();
+		
 		
 	//	i.a();
 		
