@@ -34,7 +34,9 @@ public class ArrayStringExercise {
     
     for(int i=0; i<myArray.length; i++) 
     {
-        myArray[i] = sc1.next();
+       // myArray[i] = sc1.next();//use this if you want to wait and enter the second value
+    	System.out.println("Enter the array value for position "+ i);
+        myArray[i] = sc1.nextLine();
        
         System.out.println(myArray[i]);
    }
