@@ -31,27 +31,40 @@ public class StringClass {
 		
 				Scanner sc1= new Scanner(System.in);
 				
-		String s1;
-		String s2="Hi String Buffer";
-		System.out.println("Enter the normal String");
-		s1=sc1.nextLine();
 		
-		System.out.println("You have entered "+s1);		
-		sc1.close();
 		System.out.println("StringBufferClass output......................");
 
 		//String Buffer class	
-		
+		String s2="Hi String Buffer";
 		StringBuffer sb = new StringBuffer(s2);
 		
 		for(int i=0;i<sb.length();i++)
 		{
 		System.out.println("Value of string sb at Index "+i+" "+sb.charAt(i));
 		}
+		
+		System.out.println(sb.hashCode());
+		System.out.println(sb.replace(0, 1,"by"));
+		System.out.println(sb.hashCode());  //Hashcode always remains same for StringBuffer and String Builder class
+		
+		
 	
 		//String Class functions
 		
+	
 		System.out.println("------------------------- String class output");
+		
+		
+		String s1;
+		
+		System.out.println("Enter the normal String");
+		s1=sc1.nextLine();
+		
+		System.out.println("You have entered "+s1);		
+		sc1.close();
+		
+		
+		
 		
 		for(int i=0;i<s1.length();i++)  //Here length is taken along with ()
 		{
