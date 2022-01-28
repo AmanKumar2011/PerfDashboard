@@ -6,6 +6,7 @@ public class ExceptionHandling {
 
 	public static void main(String[] args) 
 	{
+		//unchecked exception or runtime exception
 		int a=5,b=0;
 		int c;
 	//	c=a/b;

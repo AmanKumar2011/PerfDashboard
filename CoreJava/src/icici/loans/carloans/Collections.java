@@ -13,6 +13,8 @@ public class Collections {
 	/*
 	 * protected void aa(float x,int y) { System.out.println("I am inside float"); }
 	 */
+	
+	
 		
 	public static void main(String[] args) 
 	{
