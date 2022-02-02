@@ -29,6 +29,8 @@ public interface Rbi1
 		public static void main(String[] args) 
 		{
 			Rbi1 i;
+			Rbi1 j=i;
+			j.withdrawalRbi1();
 			i= new ICICI();
 			i.withdrawal();
 			
